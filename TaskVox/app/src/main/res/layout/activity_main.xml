@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    tools:context=".MainActivity">
+
+    <!-- Título de la Aplicación -->
+    <TextView
+        android:id="@+id/tituloApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TASK VOX"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Icono de Micrófono para Grabar -->
+    <ImageView
+        android:id="@+id/iconoMicrofono"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tituloApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icono_microfono"
+        android:contentDescription="Icono de micrófono" />
+
+    <!-- Etiqueta para Grabar Tarea -->
+    <TextView
+        android:id="@+id/etiquetaGrabarTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iconoMicrofono"
+        android:layout_centerHorizontal="true"
+        android:text="Grabar Tarea"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp" />
+
+    <ProgressBar
+        android:id="@+id/ondaSonido"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etiquetaGrabarTarea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true"
+        android:progressDrawable="@drawable/onda_sonido" />
+
+    <!-- Botón Grabar Tarea -->
+    <Button
+        android:id="@+id/botonGrabar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ondaSonido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Grabar Tarea"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3F51B5" />
+
+    <!-- Botón Recordatorio -->
+    <Button
+        android:id="@+id/botonRecordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/botonGrabar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Recordatorio"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3F51B5" />
+
+    <!-- Botón Agregar Tarea -->
+    <Button
+        android:id="@+id/botonAgregarTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/botonRecordatorio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Agregar Tarea"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3F51B5" />
+
+</RelativeLayout>

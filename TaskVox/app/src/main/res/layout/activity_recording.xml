@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    tools:context=".RecordingActivity">
+
+    <!-- Título de la Grabación -->
+    <TextView
+        android:id="@+id/tituloGrabacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grabación de Tarea"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Indicador de Grabación (nuevo diseño) -->
+    <ImageView
+        android:id="@+id/ondaSonidoGrabacion"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/tituloGrabacion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/onda_sonido"
+        android:contentDescription="Indicador de grabación" />
+
+    <!-- Botón Iniciar Grabación -->
+    <ImageButton
+        android:id="@+id/botonIniciarGrabacion"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/ondaSonidoGrabacion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/play"
+        android:contentDescription="Iniciar Grabación"
+        android:background="@android:color/transparent" />
+
+    <!-- Botón Detener Grabación -->
+    <ImageButton
+        android:id="@+id/botonDetenerGrabacion"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/botonIniciarGrabacion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pause"
+        android:contentDescription="Detener Grabación"
+        android:background="@android:color/transparent" />
+
+    <!-- Botón Guardar Grabación -->
+    <ImageButton
+        android:id="@+id/botonGuardarGrabacion"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/botonDetenerGrabacion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/disk"
+        android:contentDescription="Guardar Grabación"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>
